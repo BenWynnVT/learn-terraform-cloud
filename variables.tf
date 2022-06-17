@@ -14,5 +14,6 @@ variable "instance_name" {
 }
 
 resource "aws_iam_user" "example" {
-  name = "testname"
+  count = 3
+  name = "testname.${count.index}"
 }
