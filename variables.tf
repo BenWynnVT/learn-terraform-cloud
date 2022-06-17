@@ -13,3 +13,6 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
+resource "aws_iam_user" "example" {
+  name = "testname"
+}
