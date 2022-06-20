@@ -7,6 +7,6 @@ output "instance_arn" {
 }
 
 output "password" {
-  value = aws_instance.db.password
+  value = aws_instance.ubuntu.password
   sensitive = true
 }
