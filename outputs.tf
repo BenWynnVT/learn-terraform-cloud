@@ -6,7 +6,3 @@ output "instance_arn" {
   value = aws_instance.ubuntu.arn
 }
 
-output "password" {
-  value = aws_instance.ubuntu.password
-  sensitive = true
-}
